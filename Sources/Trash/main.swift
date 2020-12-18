@@ -12,3 +12,8 @@ for path in paths {
         print(error.localizedDescription)
     }
 }
+
+// Print help text if no paths were passed
+if paths.isEmpty {
+    print("USAGE: trash <path> [...]")
+}
